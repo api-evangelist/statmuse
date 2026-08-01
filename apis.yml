@@ -1,7 +1,13 @@
 aid: statmuse
 name: StatMuse
-description: StatMuse is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: StatMuse is a natural-language search engine that answers sports and financial
+  questions in plain English, returning instant stats, tables, and visual answers.
+  It covers MLB, NBA, NFL, NHL, WNBA, PGA, college football, and soccer, along with
+  StatMuse Money for stock-market and finance data. Users ask questions conversationally
+  ("How many points did LeBron score last night?") and get sourced answers with charts
+  and shareable cards. Backed by Techstars, the company is consumer-facing and does
+  not currently publish a public developer API, SDKs, or programmatic access surface;
+  this profile is maintained in the API Evangelist network as a company lead.
 url: https://raw.githubusercontent.com/api-evangelist/statmuse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,30 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sports
+- Statistics
+- Search
+- Natural Language
+- Data
+- Finance
+- Analytics
+image: https://www.statmuse.com/images/sm-meta-banner.jpg
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/statmuse-domain-security.yml
 - type: Website
   url: https://statmuse.com/
+- type: Blog
+  url: https://blog.statmuse.com/
+- type: TermsOfService
+  url: https://www.statmuse.com/terms
+- type: PrivacyPolicy
+  url: https://www.statmuse.com/privacy
+- type: Login
+  url: https://www.statmuse.com/auth/signin
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
